@@ -1,6 +1,6 @@
 # Nmap
 
-Nmap (Network Mapper) adalah tool open-source yang digunakan untuk melakukan pemindaian dan analisis jaringan. Ini adalah salah satu alat paling populer di bidang keamanan jaringan dan digunakan oleh administrator jaringan serta para profesional keamanan untuk memetakan jaringan, mengidentifikasi perangkat yang terhubung, dan mengevaluasi status keamanan.
+### Nmap (Network Mapper) adalah tool open-source yang digunakan untuk melakukan pemindaian dan analisis jaringan. Ini adalah salah satu alat paling populer di bidang keamanan jaringan dan digunakan oleh administrator jaringan serta para profesional keamanan untuk memetakan jaringan, mengidentifikasi perangkat yang terhubung, dan mengevaluasi status keamanan.
 
 Berikut adalah fungsi utama Nmap:
 
