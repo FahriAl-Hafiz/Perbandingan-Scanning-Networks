@@ -188,7 +188,7 @@ Angry IP Scanner menyediakan antarmuka pengguna grafis yang sangat sederhana, da
 
 ## Perbandingan Utama:
 
-  + Nmap unggul dalam fleksibilitas dan kedalaman pemindaian, menjadikannya alat yang sangat kuat untuk pengguna yang berpengalaman dalam keamanan jaringan.
+  + Nmap unggul dalam fleksibilitas dan kedalaman Scanning, menjadikannya alat yang sangat kuat untuk pengguna yang berpengalaman dalam keamanan jaringan.
   
   + Zenmap menawarkan kemudahan penggunaan dengan antarmuka yang mempermudah akses ke fitur Nmap tanpa mengorbankan fungsionalitasnya, cocok untuk pengguna yang membutuhkan GUI.
   
