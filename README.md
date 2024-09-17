@@ -9,17 +9,17 @@ Dalam dunia keamanan jaringan dan administrasi sistem, pemindaian jaringan adala
 
 Tiga alat yang sering digunakan untuk tugas ini adalah **Nmap, Zenmap, dan Angry IP Scanner**. Meskipun ketiganya memiliki fungsi utama yang sama, yaitu memindai dan memetakan jaringan, masing-masing memiliki keunikan dalam hal antarmuka, fitur, dan penggunaannya.
 
-## 1. Nmap (Network Mapper):
+## 1. Nmap :
 
 Nmap adalah salah satu alat pemindaian jaringan yang paling kuat dan banyak digunakan dalam keamanan siber. Alat ini dirancang untuk memindai jaringan dan mengidentifikasi host, port terbuka, serta layanan yang berjalan pada jaringan tersebut. Fungsi utamanya meliputi pemindaian port, deteksi sistem operasi (OS detection), dan pencarian layanan yang tersedia di host tertentu. Karena sifatnya yang sangat fleksibel, Nmap mendukung berbagai teknik pemindaian, termasuk pemindaian TCP, UDP, SYN, FIN, dan lain-lain.
 
 Keunggulan Nmap terletak pada kemampuannya yang mendalam dan detail dalam melakukan pemetaan jaringan, serta kemampuannya untuk dikustomisasi dengan berbagai opsi dan skrip (seperti Nmap Scripting Engine, NSE). Namun, Nmap lebih berorientasi pada pengguna yang nyaman dengan antarmuka baris perintah (CLI), sehingga bisa jadi agak rumit untuk pengguna baru yang tidak terbiasa dengan command-line.
-## 2. Zenmap:
+## 2. Zenmap :
 
 Zenmap adalah versi antarmuka grafis (GUI) dari Nmap. Alat ini dirancang untuk pengguna yang kurang nyaman dengan antarmuka baris perintah dan ingin pengalaman yang lebih visual dan intuitif dalam menggunakan Nmap. Meskipun Zenmap menggunakan mesin pemindaian Nmap di latar belakang, antarmuka grafisnya memudahkan pengguna dalam menavigasi dan melakukan pemindaian dengan klik dan pengaturan yang lebih mudah dimengerti.
 
 Zenmap memungkinkan pengguna untuk menyimpan hasil pemindaian dan membandingkannya dari waktu ke waktu, sehingga sangat cocok untuk tugas pemantauan jaringan berulang. Meskipun memiliki fitur yang sama dengan Nmap, Zenmap membuat penggunaan alat ini lebih ramah bagi pemula yang membutuhkan akses cepat tanpa harus mengingat sintaks baris perintah yang rumit.
-## 3. Angry IP Scanner:
+## 3. Angry IP Scanner :
 
 Angry IP Scanner adalah alat pemindaian jaringan yang terkenal karena kesederhanaan dan kecepatannya. Tidak seperti Nmap yang lebih detail dan mendalam, Angry IP Scanner lebih fokus pada pemindaian IP dan port secara cepat di jaringan lokal maupun luas. Ini merupakan pilihan populer bagi pengguna yang membutuhkan hasil pemindaian cepat tanpa terlalu banyak detail atau konfigurasi yang rumit.
 
