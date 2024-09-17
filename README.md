@@ -24,15 +24,10 @@ Zenmap memungkinkan pengguna untuk menyimpan hasil pemindaian dan membandingkann
 Angry IP Scanner adalah alat pemindaian jaringan yang terkenal karena kesederhanaan dan kecepatannya. Tidak seperti Nmap yang lebih detail dan mendalam, Angry IP Scanner lebih fokus pada pemindaian IP dan port secara cepat di jaringan lokal maupun luas. Ini merupakan pilihan populer bagi pengguna yang membutuhkan hasil pemindaian cepat tanpa terlalu banyak detail atau konfigurasi yang rumit.
 
 Angry IP Scanner menyediakan antarmuka pengguna grafis yang sangat sederhana, dan hasil pemindaian ditampilkan secara langsung dalam tabel yang mudah dibaca. Alat ini cocok untuk pengguna yang hanya perlu melakukan pemindaian sederhana dan cepat, seperti mencari perangkat yang aktif di jaringan atau memeriksa port yang terbuka. Meskipun lebih cepat dan mudah digunakan, Angry IP Scanner tidak memiliki kedalaman fitur seperti Nmap dalam hal pemindaian mendalam atau kemampuan skrip.
-Perbandingan Utama:
 
-  + Nmap unggul dalam fleksibilitas, kedalaman pemindaian, dan kemampuan scripting, menjadikannya alat yang sangat kuat untuk pengguna yang berpengalaman dalam keamanan jaringan.
-  
-  + Zenmap menawarkan kemudahan penggunaan dengan antarmuka grafis yang mempermudah akses ke fitur Nmap tanpa mengorbankan fungsionalitasnya, cocok untuk pengguna yang membutuhkan GUI.
-  
-  + Angry IP Scanner adalah pilihan terbaik untuk pemindaian cepat dan sederhana, ideal bagi pengguna yang membutuhkan informasi dasar seperti perangkat yang aktif di jaringan tanpa banyak konfigurasi atau fitur tambahan.
 
 ## Hasil perbandingan dari penggunaan ketiga tools tersebut : 
+
 
 1.     sudo nmap -sS -A -sV www.dpr.go.id >> nmap.log
    
@@ -110,6 +105,100 @@ Perbandingan Utama:
         
         OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
         Nmap done: 1 IP address (1 host up) scanned in 71.96 seconds
+
+
+2.     Starting Nmap 7.95 ( https://nmap.org ) at 2024-09-17 16:16 EDT
+        Nmap scan report for www.dpr.go.id (23.52.171.147)
+        Host is up (0.012s latency).
+        Other addresses for www.dpr.go.id (not scanned): 23.52.171.123 2600:1417:5c00:20::17d6:a9d3 2600:1417:5c00:20::17d6:a9e1
+        rDNS record for 23.52.171.147: a23-52-171-147.deploy.static.akamaitechnologies.com
+        Not shown: 998 filtered tcp ports (no-response)
+        PORT    STATE SERVICE VERSION
+        80/tcp  open  http    AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+        |_http-title: Dewan Perwakilan Rakyat
+        443/tcp open  ssl
+        | tls-alpn: 
+        |   http/1.1
+        |_  http/1.0
+        | ssl-cert: OpenSSL required to parse certificate.
+        | -----BEGIN CERTIFICATE-----
+        | MIIHGzCCBgOgAwIBAgIQC86uXxkIqBcXeYKILRAPQzANBgkqhkiG9w0BAQsFADBP
+        | MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMSkwJwYDVQQDEyBE
+        | aWdpQ2VydCBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTAeFw0yNDA0MTgwMDAwMDBa
+        | Fw0yNTA0MTkyMzU5NTlaMHkxCzAJBgNVBAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNo
+        | dXNldHRzMRIwEAYDVQQHEwlDYW1icmlkZ2UxIjAgBgNVBAoTGUFrYW1haSBUZWNo
+        | bm9sb2dpZXMsIEluYy4xGjAYBgNVBAMTEWEyNDguZS5ha2FtYWkubmV0MIIBIjAN
+        | BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqGpA0e4oRRVGNufJoFuYxBeeqoXQ
+        | FXjC/CPHJYG2GMrFoKHFieW9k6I4rNo+C6bOPtX6J361xYJ8Xwi6YfiGyGn15aO/
+        | 1bWZw974tVaLJoVjiimVU6XKBVO+GVEs7R8GHlNKOdRh+VLC5ZAiWFcHvEWksBzX
+        | mQwgMJT14tXupmSSCef11OTlIHQtDFqU68ZnqEezrs/0ayJUh9yWtWBUCFMIfeX5
+        | bvQflOH+s5zAkmYcNxq6NgkKZ+LsvbvJG4pYgVstJZ3rQO6VH7seD6r8JEpc/oWf
+        | wREI9gZLPyGH9AnTUflEPeRMYpHbe7e6kEpbRpFTUDMP0Eymp3TQITJyGwIDAQAB
+        | o4IDxzCCA8MwHwYDVR0jBBgwFoAUt2ui6qiqhIx56rTaD5iyxZV2ufQwHQYDVR0O
+        | BBYEFApfhQi0NX+b0J0gxaF8hxlR7YG0MG4GA1UdEQRnMGWCEWEyNDguZS5ha2Ft
+        | YWkubmV0gg8qLmFrYW1haXplZC5uZXSCFyouYWthbWFpemVkLXN0YWdpbmcubmV0
+        | gg4qLmFrYW1haWhkLm5ldIIWKi5ha2FtYWloZC1zdGFnaW5nLm5ldDA+BgNVHSAE
+        | NzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRpZ2ljZXJ0
+        | LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+        | BgEFBQcDAjCBjwYDVR0fBIGHMIGEMECgPqA8hjpodHRwOi8vY3JsMy5kaWdpY2Vy
+        | dC5jb20vRGlnaUNlcnRUTFNSU0FTSEEyNTYyMDIwQ0ExLTQuY3JsMECgPqA8hjpo
+        | dHRwOi8vY3JsNC5kaWdpY2VydC5jb20vRGlnaUNlcnRUTFNSU0FTSEEyNTYyMDIw
+        | Q0ExLTQuY3JsMH8GCCsGAQUFBwEBBHMwcTAkBggrBgEFBQcwAYYYaHR0cDovL29j
+        | c3AuZGlnaWNlcnQuY29tMEkGCCsGAQUFBzAChj1odHRwOi8vY2FjZXJ0cy5kaWdp
+        | Y2VydC5jb20vRGlnaUNlcnRUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3J0MAwGA1Ud
+        | EwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB3AM8RVu7VLnyv84db
+        | 2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABjvFmI+0AAAQDAEgwRgIhAPVgoJHc/QEU
+        | blpkXp9RQq0RofgS0iwnIFMT6J66MTiFAiEAwYvpjkO5d/sVKdKtkQW0HESMen/7
+        | shS56B9JU4unWfIAdwB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAA
+        | AY7xZiO9AAAEAwBIMEYCIQCbHdXugLUCltL848VExmqsH3PpB/92HC0EKNhz1s+5
+        | cAIhALCkgautlKPd3OrDgWxP83JgXrhnkA71ppG9yS4y8Hr7AHUA5tIxY0B3jMEQ
+        | QQbXcbnOwdJA9paEhvu6hzId/R43jlAAAAGO8WYjygAABAMARjBEAiBz92X8U6tC
+        | 6jOPJ8q5K1qXOPZa4IR1eqjfqfuyh4hN/QIgM9mRadEK9GY2rzKuDMwjh7sZNNwz
+        | K3ratQbXf9Mu0vcwDQYJKoZIhvcNAQELBQADggEBABGC3vRlpdBmST0RKziaE2ZF
+        | 0gZGbmDakDbCKB2eQbmprybedKbjq9Qc5bidncwxYt5hXg06/ZXMpG2QQLVgbPqG
+        | J+NOkWJZM3qL83DWAXp4vg29cRK3MDtDXLNRrcWbkqXE6oZDuiCMtGiBIadVjrcH
+        | 2lb0jP3k+CESdRBtvnFW5pUumqcCQIEbL062pqemNyllSgbKmmdvgXKuc5QQROIA
+        | LM3nmi3p1d50GvNh25EX01A4oGFT7n8ZQRFZHLzKvTKRVnhComy+UDNPLM5iAr0E
+        | GJAqBLsUGDmKZg3PSXqkl8z7CygfECpmRZyPOrDSKIPXbfTpu3B5cmFx9U7FxXY=
+        |_-----END CERTIFICATE-----
+        |_ssl-date: TLS randomness does not represent time
+        |_ssl-known-key: ERROR: Script execution failed (use -d to debug)
+        | tls-nextprotoneg: 
+        |   http/1.1
+        |_  http/1.0
+        Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+        Device type: WAP
+        Running: Actiontec embedded, Linux
+        OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel
+        OS details: Actiontec MI424WR-GEN3I WAP
+        Network Distance: 2 hops
+        
+        TRACEROUTE (using port 80/tcp)
+        HOP RTT     ADDRESS
+        1   0.33 ms 192.168.159.2
+        2   0.23 ms a23-52-171-147.deploy.static.akamaitechnologies.com (23.52.171.147)
+        
+        OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+        Nmap done: 1 IP address (1 host up) scanned in 72.93 seconds
+   
+
+3. Angry Ip Scanner
+    ![image](https://github.com/user-attachments/assets/78f5010d-070c-4a35-8aae-1f2e6b1fd8bc)
+
+
+## Perbandingan Utama:
+
+  + Nmap unggul dalam fleksibilitas dan kedalaman pemindaian, menjadikannya alat yang sangat kuat untuk pengguna yang berpengalaman dalam keamanan jaringan.
+  
+  + Zenmap menawarkan kemudahan penggunaan dengan antarmuka yang mempermudah akses ke fitur Nmap tanpa mengorbankan fungsionalitasnya, cocok untuk pengguna yang membutuhkan GUI.
+  
+  + Angry IP Scanner digunakan untuk scan cepat dan sederhana, ideal bagi pengguna yang membutuhkan informasi sederhana seperti host yang aktif di jaringan tanpa banyak konfigurasi atau fitur tambahan.
+
+
+
+
+
+      
 
 
 
