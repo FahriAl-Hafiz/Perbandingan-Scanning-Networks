@@ -1,5 +1,5 @@
 # Perbandingan-Scanning-Networks
-Nmap | Zenmap | Angry IP Scanner
+[Nmap](Nmap.md) | [Zenmap](Zenmap.md) | [Angry Ip Scanner](IpAngryScanner.md) 
 
 **Scanning networks** adalah proses mencari dan mengidentifikasi perangkat, layanan, dan port yang terbuka di dalam jaringan. 
 
